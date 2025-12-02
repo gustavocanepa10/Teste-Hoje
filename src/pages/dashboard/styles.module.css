@@ -49,18 +49,22 @@ span {
   justify-content: center;
 }
 
-.logoButton:hover {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+.logoButton:hover,
+.logoButton:focus,
+.logoButton:active {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important; 
+  box-shadow: none !important;
 }
 
+
 .logoButton {
-  background: none;
+  background-color: transparent;
   border: none;
   padding: 0;
   width: 100%;
+
 }
 
 .mobileBtn {
