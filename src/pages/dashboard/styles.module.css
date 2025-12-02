@@ -1,0 +1,82 @@
+
+
+
+
+
+.container {
+  display: flex;
+  
+  
+}
+
+.list {
+  background-color: transparent;
+  
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.sidebar {
+  width: 265px;
+  height: 100vh;
+  background-color: #004AAD;
+
+  img {
+    width: 265px;
+    object-fit: cover;
+    height: 75px;
+    margin-top: 10px;
+  }
+}
+
+span {
+  color: #5791CE;
+
+  
+
+}
+
+.ant-menu-item-selected:hover {
+  background: #5791CE ; 
+        
+}
+
+
+content {
+  background: #E6F2FF;
+  padding: 20px;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+
+.logoButton:hover {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  
+}
+
+.logoButton {
+
+   background: none;
+  border: none;
+  padding: 0;
+ 
+
+}
+
+
+
+
+
+
+
+
+
+

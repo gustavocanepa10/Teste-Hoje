@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #cfe7ff;
+}
+
+.card {
+  width: 456px;
+  padding: 40px;
+  background: #5791ce;
+  border-radius: 8px;
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  color: #0a1a3c;
+  box-shadow: 
+    0 10px 25px -5px rgba(0, 45, 90, 0.3), 
+    0 8px 10px -6px rgba(0, 45, 90, 0.1);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 382px;
+  height: 79px;
+  display: block;
+  object-fit: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+  background-color: #004AAD;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b69ce;
+}
+
+
+.forgot {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.forgot span {
+  color: #153b81;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forgot span:hover {
+  color: #1b69ce;
+
+
+}
+
+label {
+  color: white;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
