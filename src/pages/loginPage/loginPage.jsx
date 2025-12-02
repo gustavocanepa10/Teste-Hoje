@@ -44,8 +44,8 @@ export function LoginPage() {
           <Input
             style={{ display: "flex", gap: 6, alignItems: "center" }}
             size="large"
-            placeholder="Sua conta de e-mail"
-            prefix={<MailOutlined />}
+            placeholder="digite seu e-mail"
+            prefix={<MailOutlined/>}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />

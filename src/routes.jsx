@@ -8,6 +8,7 @@ import { Usuarios } from "./components/Usuários/Usuarios";
 import { Imoveis } from "./components/Imoveis/Imoveis";
 import { AReceber } from "./components/AReceber/AReceber";
 import { APagar } from "./components/APagar/APagar";
+import { NotFoundPage } from "./pages/notFound/NotFoundPage";
 
 export const router = createBrowserRouter([
   
@@ -15,6 +16,9 @@ export const router = createBrowserRouter([
     path: "/",
     element: <LoginPage />,
   },
+
+
+  {path : "*", element : <NotFoundPage/>},
 
   // ROTAS LOGADAS
   {
