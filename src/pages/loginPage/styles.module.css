@@ -99,6 +99,28 @@ label {
 }
 
 
+:global(.ant-input-prefix) {
+  color: #004AAD; 
+  margin-right: 8px; 
+}
+
+
+:global(.ant-input-suffix) {
+  color: #004AAD;
+}
+
+
+
+:global(.ant-message-success .anticon) {
+  background-color: #52c41a !important;
+  color: white !important;
+  border-radius: 50%;                   
+  padding: 2px;                       
+}
+
+:global(.ant-message span) {
+  color: rgba(0, 0, 0, 0.88) !important; 
+}
 
 
 

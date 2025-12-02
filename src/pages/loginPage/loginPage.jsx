@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Input, Button } from "antd";
+import { Input } from "antd";
 import {
   MailOutlined,
   LockOutlined,
@@ -18,12 +18,13 @@ export function LoginPage() {
   const navigate = useNavigate();
 
   function handleLogin(e) {
-    e.preventDefault();
+    e.preventDefault()
     if (email === "admin" && senha === "admin") {
-      message.success("Login realizado!");
+      message.success("Login realizado com sucesso!");
       navigate("/dashboard");
     } else {
-      message.error("Login ou senha incorretos!");
+      message.error("Login ou senha incorretos!");~
+      console.log(message.error)
     }
   }
 
@@ -40,10 +41,10 @@ export function LoginPage() {
         "
         >
           <label>E-mail</label>
-          <Input style={{display:"flex", gap : 6, alignItems : "center"}}
+          <Input
+            style={{ display: "flex", gap: 6, alignItems: "center" }}
             size="large"
             placeholder="Sua conta de e-mail"
-            color="black"
             prefix={<MailOutlined />}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -51,9 +52,8 @@ export function LoginPage() {
 
           <label>Senha</label>
           <Input.Password
-            style={{display:"flex", gap : 6, alignItems : "center"}}
+            style={{ display: "flex", gap: 6, alignItems: "center" }}
             size="large"
-            color="black"
             placeholder="***********"
             prefix={<LockOutlined />}
             iconRender={(visible) =>
