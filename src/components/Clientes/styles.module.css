@@ -1,5 +1,10 @@
 .container {
-  padding: 20px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
 }
 
 .title {
@@ -14,6 +19,7 @@
   background: white;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
 }
 
 .table thead {
@@ -27,10 +33,78 @@
   border-bottom: 1px solid #eee;
 }
 
-
-
 .avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  object-fit: cover; 
+  vertical-align: middle;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem; 
+  }
+
+  
+  .table, .table thead, .table tbody, .table th, .table td, .table tr {
+    display: block;
+  }
+
+  
+  .table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table tr {
+    border: 1px solid #ccc;
+    margin-bottom: 15px; 
+    border-radius: 8px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .table td {
+    
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: right;
+  }
+
+  .table td:last-child {
+    border-bottom: 0;
+  }
+
+  
+  .table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #004AAD;
+    text-align: left;
+    margin-right: 10px;
+  }
+  
+  
+  .table td[data-label="Foto"] {
+    justify-content: center;
+    background-color: #f9f9f9;
+    margin: -10px -10px 10px -10px; 
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .table td[data-label="Foto"]::before {
+    display: none; 
+  }
 }

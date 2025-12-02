@@ -89,7 +89,14 @@ label {
 
 
 
-
+@media (max-width: 768px) {
+    .container {
+      padding: 0 10px;
+    }
+    .card {
+      width: 300px;
+    }
+}
 
 
 
