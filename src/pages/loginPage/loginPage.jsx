@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Input } from "antd";
+import { Input, message } from "antd";
 import {
   MailOutlined,
   LockOutlined,
@@ -9,50 +9,52 @@ import {
 import styles from "./styles.module.css";
 import Logo from "../../assets/logo.png";
 import { useNavigate } from "react-router-dom";
-import { message } from "antd";
 
 export function LoginPage() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-
   const navigate = useNavigate();
 
+
+
   function handleLogin(e) {
-    e.preventDefault()
+    e.preventDefault();
     if (email === "admin" && senha === "admin") {
       message.success("Login realizado com sucesso!");
-      navigate("/dashboard");
+     
+      setTimeout(() => {
+        navigate("/dashboard");
+      }, 1000);
     } else {
-      message.error("Login ou senha incorretos!");~
-      console.log(message.error)
+      message.error("Login ou senha incorretos!");
     }
   }
 
   return (
     <div className={styles.container}>
+     
       <div className={styles.card}>
         <div className={styles.logoContainer}>
           <img className={styles.logo} src={Logo} alt="Logo" />
         </div>
 
-        <form
-          onSubmit={handleLogin}
-          action="
-        "
-        >
+        <h1>
+          Login
+        </h1>
+
+        <form onSubmit={handleLogin}>
           <label>E-mail</label>
           <Input
-            style={{ display: "flex", gap: 6, alignItems: "center" }}
             size="large"
-            placeholder="digite seu e-mail"
-            prefix={<MailOutlined/>}
+            placeholder="Digite seu e-mail"
+            prefix={<MailOutlined />}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            
           />
 
           <label>Senha</label>
           <Input.Password
-            style={{ display: "flex", gap: 6, alignItems: "center" }}
             size="large"
             placeholder="***********"
             prefix={<LockOutlined />}

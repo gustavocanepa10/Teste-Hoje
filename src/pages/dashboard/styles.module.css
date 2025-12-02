@@ -1,28 +1,35 @@
 .container {
   display: flex;
   min-height: 100vh;
+  background-color: #f0f2f5;
+  
+  
 }
 
 .list {
   background-color: transparent;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  border-inline-end: none !important;
+  border-inline-end: none;
+  padding-left: 1rem;
 }
 
 .sidebar {
-  width: 265px;
+  width: 250px;
   min-height: 100vh;
   background-color: #004aad;
   flex-shrink: 0;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
 }
 
 .sidebar img,
 .logoImg {
   width: 265px;
   object-fit: cover;
-  height: 75px;
-  margin-top: 10px;
 }
 
 span {
@@ -49,22 +56,18 @@ span {
   justify-content: center;
 }
 
-.logoButton:hover,
-.logoButton:focus,
-.logoButton:active {
-  background: transparent !important;
-  border: none !important;
-  outline: none !important; 
-  box-shadow: none !important;
-}
-
-
 .logoButton {
-  background-color: transparent;
+  background-color: #004aad;
   border: none;
   padding: 0;
   width: 100%;
+  box-shadow: none;
+}
 
+.logoButton:hover {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
 .mobileBtn {
@@ -93,7 +96,3 @@ span {
     align-items: flex-start;
   }
 }
-
-
-
-
